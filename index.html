@@ -3,108 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description"
+            content="Mary's simple recipe for maple bacon donuts
+                   makes a sticky, sweet treat with just a hint
+                   of salt that you'll keep coming back for."
+    />
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
-
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Device Shop Checkout | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
-    <!--     
-    Checkout
-    
-    3 items
-    
-    iPhone 12 Pro
-    
-    Golden
-    
-    $999.00
-    
-    x 1
-    
-    Apple Watch
-    
-    Blue
-    
-    $399.00
-    
-    iMac
-    
-    Green
-    
-    $1199.00
-    
-    Enter coupon code
-    
-    Apply Coupon
-    
-    Sub total
-    
-    $2597.00
-    
-    Tax
-    
-    $623.28
-    
-    Total
-    
-    $3220.28
-    
-    Contact Information
-    
-    First & Last name
-    
-    Enter first & last name
-    
-    Email Address
-    
-    Enter email address
-    
-    Country
-    
-    Finland
-    
-    Postal Code
-    
-    00270
-    
-    Continue
-     -->
+  <h1>Checkout</h1>
+  <span>3 items</span>
+  <div class="wrapper">
+    <main class="container">
+      <section class="product">
+        <div class="product-item">
+          <img srcset="resources/Gold@2x.png" src="./resources/Gold.png" alt="iPhone">
+          <h2>iPhone 12 Pro</h2>
+          <p>Golden</p>
+          <span class="price">$999.00</span>
+          <span class="count">x1</span>
+          <span class="remove">X</span>
+        </div>
+        <div class="product-item">
+          <img srcset="resources/Apple-watchx2.png" src="./resources/Apple-watch.png" alt="Apple-watch">
+          <h2>Apple Watch</h2>
+          <p>Blue</p>
+          <span class="price">$399.00</span>
+          <span class="count">x1</span>
+          <span class="remove">X</span>
+        </div>
+        <div class="product-item">
+          <img srcset="resources/iMac@2x.png" src="./resources/iMac.png" alt="iMac">
+          <h2>iMac</h2>
+          <p>Green</p>
+          <span class="price">$1199.00</span>
+          <span class="count">x1</span>
+          <span class="remove">X</span>
+        </div>
+        <input type="text" placeholder="Enter cupon code" />
+        <button>Apply Coupon</button>
+        <div class="">
+          <table >
+            <tr>
+              <td> Sub total</td>
+              <td>$2597.00</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td>$623.28</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$3220.28</td>
+            </tr>
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+          </table>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Contact Information</h2>
+        <form action="#">
+          <p>First & Last name</p>
+          <input type="text" placeholder="Enter first & last name">
+          <p>Email Address</p>
+          <input type="email" placeholder="Enter email address">
+          <p>Country</p>
+          <input type="text" placeholder="Finland">
+          <p>Postal Code</p>
+          <input type="text" placeholder="00270">
+
+          <button>Continue</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+    <footer>
+      <div class="attribution">
+        <p>
+          Coded by
+          <a
+                  href="https://github.com/Stif351/Shop-checkout.git"
+                  target="_blank"
+          >Stanislav Tsyhanok</a
+          >
+        </p>
+        <p>
+          Challenge by
+          <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >DevChallenges</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

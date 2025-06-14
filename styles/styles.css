@@ -3,3 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color:#f3f4f6;
+    --button-color: #1d1d1f;
+    --color-white: #ffffff;
+    --button-hover: #ffffff;  /* change color */
+    --text-color: #394150;
+    --input-color: #e5e7eb;
+    --category-color: #d2d5da;
+    --header-color: #111729;
+    --link-footer: #284bce;
+}
+
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+/*
+    Inter - Heading
+700 - Bold
+24px | 1.5rem
+
+Inter - Body Text
+400|500|600 - Regular|Medium|Semibold
+16px | 1rem
+
+*/
+body {
+    background-color: var(--input-color);
+}
+h1{
+    display: inline-block;
+
+    padding: 47px 10px;
+
+}
+.product{
+    background: var(--category-color);
+}
+table{
+    width: 100%;
+}
+.contact{
+    background: var(--primary-color);
+}
+.wrapper{
+    margin: 0 auto;
+}
+
+
+/* ================  FOOTER  ============== */
+
+footer {
+    max-width: 275px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    color: var(--header-color);
+}
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.attribution p {
+    font-weight: 600;
+}
+.attribution a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--link-footer);
+}
