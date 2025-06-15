@@ -20,37 +20,60 @@
 
   </head>
   <body>
-  <h1>Checkout</h1>
-  <span>3 items</span>
-  <div class="wrapper">
-    <main class="container">
+  <header>
+    <h1>Checkout</h1>
+    <span>3 items</span>
+  </header>
+
+<!--  <div class="wrapper">-->
+    <main class="wrapper">
       <section class="product">
         <div class="product-item">
-          <img srcset="resources/Gold@2x.png" src="./resources/Gold.png" alt="iPhone">
-          <h2>iPhone 12 Pro</h2>
-          <p>Golden</p>
-          <span class="price">$999.00</span>
-          <span class="count">x1</span>
-          <span class="remove">X</span>
+          <div class="img">
+          <img srcset="resources/Gold@2x.png" src="./resources/Gold.png"   alt="iPhone">
+          </div>
+            <div class="name-product">
+              <h2>iPhone 12 Pro</h2>
+              <p>Golden</p>
+              <span class="count">x1</span>
+            </div>
+          <div class="price-product">
+            <span class="price">$999.00</span>
+            <span class="remove">X</span>
+          </div>
         </div>
         <div class="product-item">
+          <div class="img">
           <img srcset="resources/Apple-watchx2.png" src="./resources/Apple-watch.png" alt="Apple-watch">
-          <h2>Apple Watch</h2>
+          </div>
+          <div class="name-product">
+            <h2>Apple Watch</h2>
           <p>Blue</p>
+            <span class="count">x1</span>
+            </div>
+          <div class="price-product">
           <span class="price">$399.00</span>
-          <span class="count">x1</span>
           <span class="remove">X</span>
+        </div>
         </div>
         <div class="product-item">
-          <img srcset="resources/iMac@2x.png" src="./resources/iMac.png" alt="iMac">
-          <h2>iMac</h2>
+          <div class="img">
+          <img srcset="resources/iMac@2x.png" src="./resources/iMac.png"  alt="iMac">
+          </div>
+          <div class="name-product">
+            <h2>iMac</h2>
           <p>Green</p>
-          <span class="price">$1199.00</span>
           <span class="count">x1</span>
+        </div>
+          <div class="price-product">
+          <span class="price">$1199.00</span>
           <span class="remove">X</span>
         </div>
-        <input type="text" placeholder="Enter cupon code" />
-        <button>Apply Coupon</button>
+        </div>
+        <div class="btn-d">
+          <input class="coupon" type="text" placeholder="Enter cupon code" />
+          <button class="btn-coupon">Apply Coupon</button>
+        </div>
         <div class="">
           <table >
             <tr>
@@ -68,24 +91,32 @@
 
           </table>
         </div>
+
       </section>
       <section class="contact">
         <h2>Contact Information</h2>
-        <form action="#">
-          <p>First & Last name</p>
-          <input type="text" placeholder="Enter first & last name">
-          <p>Email Address</p>
-          <input type="email" placeholder="Enter email address">
-          <p>Country</p>
-          <input type="text" placeholder="Finland">
-          <p>Postal Code</p>
-          <input type="text" placeholder="00270">
+        <form action="#" method="post">
+          <label for="name">First & Last name</label>
+          <input id="name" name="name" type="text" placeholder="Enter first & last name">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="Enter email address">
+          <fieldset id="address">
+          <label for="country">Country</label>
+          <select  id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+          </select>
+          <label for="postcode">State</label>
 
-          <button>Continue</button>
+          <input id="postcode" name="postcode" type="text" placeholder="00270">
+          </fieldset>
+<!--          <input type="submit" value="Надіслати">-->
+          <button type="submit">Continue</button>
         </form>
       </section>
     </main>
-  </div>
+<!--  </div>-->
 
     <footer>
       <div class="attribution">

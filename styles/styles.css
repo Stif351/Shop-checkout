@@ -32,6 +32,16 @@ Inter - Body Text
 */
 body {
     background-color: var(--input-color);
+    font-size: 16px;
+
+
+}
+header {
+    width: 100%;
+
+    text-align: center;
+
+
 }
 h1{
     display: inline-block;
@@ -39,8 +49,58 @@ h1{
     padding: 47px 10px;
 
 }
+h2{
+    font-size: 16px;
+}
 .product{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     background: var(--category-color);
+}
+.product-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+.img {
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    border-radius: 10px;
+
+
+}
+img{
+
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.btn-d{
+
+}
+.coupon{
+    display: inline-block;
+    width: 174px;
+    padding: 20px;
+
+    border: none;
+    border-radius: 10px;
+}
+.btn-coupon{
+    display: inline-block;
+    width: 140px;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
 }
 table{
     width: 100%;
@@ -49,8 +109,22 @@ table{
     background: var(--primary-color);
 }
 .wrapper{
+    max-width: 390px;
+    width: 100%;
+    border-radius: 10px;
+overflow: hidden;
     margin: 0 auto;
 }
+section {
+    width: 100%;
+    padding: 32px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 
 
 /* ================  FOOTER  ============== */
