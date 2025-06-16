@@ -74,7 +74,6 @@
                     <span class="count">x1</span>
                     <span class="remove">X</span>
                 </div>
-
             </div>
         </div>
         <div class="btn-d">
@@ -85,27 +84,31 @@
             <div class="item-price"><span>Sub total</span><span>$2597.00</span></div>
             <div class="item-price"><span>Tax</span><span>$623.28</span></div>
             <div class="item-price"><span>Total</span><span>$3220.28</span></div>
-
         </div>
 
     </section>
     <section class="contact">
-        <h2>Contact Information</h2>
+
         <form action="#" method="post">
+            <h2>Contact Information</h2>
             <label for="name">First & Last name</label>
             <input id="name" name="name" type="text" placeholder="Enter first & last name">
             <label for="email">Email Address</label>
             <input id="email" name="email" type="email" placeholder="Enter email address">
             <fieldset id="address">
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="usa">USA</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                </select>
-                <label for="postcode">State</label>
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
 
-                <input id="postcode" name="postcode" type="text" placeholder="00270">
+                <div>
+                    <label for="postcode">State</label>
+                    <input id="postcode" name="postcode" type="text" placeholder="00270">
+                </div>
             </fieldset>
             <!--          <input type="submit" value="Надіслати">-->
             <button type="submit">Continue</button>

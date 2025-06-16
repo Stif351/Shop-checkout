@@ -22,35 +22,43 @@
 }
 
 body {
-    background-color: var(--input-color);
+    background-color: var(--primary-color);
     font-size: 16px;
-
+    background-image: url("/resources/background-image@2x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 0 10px;
 }
 
 header {
     width: 100%;
-
+    color: var(--color-white);
     text-align: center;
+}
 
-
+header span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--header-color);
+    padding: 8px 12px 10px;
+    border-radius: 25px;
 }
 
 h1 {
     display: inline-block;
-
     padding: 47px 10px;
-
 }
 
 h2 {
     font-size: 16px;
+
 }
 
 .product {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background: var(--category-color);
+    background: var(--input-color);
 }
 
 .product-item {
@@ -71,7 +79,6 @@ h2 {
 .name-product {
     display: flex;
     justify-content: space-between;
-
 }
 
 .name-product:last-child {
@@ -85,27 +92,21 @@ h2 {
     height: 100px;
     background: var(--primary-color);
     border-radius: 10px;
-
-
 }
 
 img {
-
     height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
 }
 
 .btn-d {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid var(--input-color);
+    border-top: 1px solid var(--category-color);
     padding-top: 24px;
-
 }
 
 .coupon {
@@ -115,6 +116,7 @@ img {
     font-size: 1rem;
     border: none;
     border-radius: 10px;
+    background: var(--primary-color);
 }
 
 .btn-coupon {
@@ -132,7 +134,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
 }
 
 .item-price {
@@ -147,7 +148,7 @@ img {
 }
 
 .contact {
-    background: var(--primary-color);
+    background: var(--color-white);
 }
 
 .wrapper {
@@ -164,11 +165,48 @@ section {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+
+
 }
 
+label {
+    display: block;
+    margin: 28px 0 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#name, #email, #postcode, #country {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--category-color);
+    background: var(--input-color);
+
+
+}
+
+fieldset {
+    display: flex;
+    gap: 24px;
+    border: none;
+}
+
+fieldset > div {
+    width: 100%;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0;
+    background: var(--button-color);
+    color: var(--color-white);
+
+}
 
 /* ================  FOOTER  ============== */
 
