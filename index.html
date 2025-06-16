@@ -1,140 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description"
-            content="Mary's simple recipe for maple bacon donuts
+          content="Mary's simple recipe for maple bacon donuts
                    makes a sticky, sweet treat with just a hint
                    of salt that you'll keep coming back for."
     />
     <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
+            rel="icon"
+            href="resources/favicon.ico"
+            type="image/x-icon"
+            sizes="96x96"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css"/>
     <title>Device Shop Checkout | devChallenges.io</title>
 
 
-  </head>
-  <body>
-  <header>
+</head>
+<body>
+<header>
     <h1>Checkout</h1>
     <span>3 items</span>
-  </header>
+</header>
 
 <!--  <div class="wrapper">-->
-    <main class="wrapper">
-      <section class="product">
+<main class="wrapper">
+    <section class="product">
         <div class="product-item">
-          <div class="img">
-          <img srcset="resources/Gold@2x.png" src="./resources/Gold.png"   alt="iPhone">
-          </div>
-            <div class="name-product">
-              <h2>iPhone 12 Pro</h2>
-              <p>Golden</p>
-              <span class="count">x1</span>
+            <div class="img">
+                <img srcset="resources/Gold@2x.png" src="./resources/Gold.png" alt="iPhone">
             </div>
-          <div class="price-product">
-            <span class="price">$999.00</span>
-            <span class="remove">X</span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-          <img srcset="resources/Apple-watchx2.png" src="./resources/Apple-watch.png" alt="Apple-watch">
-          </div>
-          <div class="name-product">
-            <h2>Apple Watch</h2>
-          <p>Blue</p>
-            <span class="count">x1</span>
+            <div class="product-info">
+                <div class="name-product">
+                    <h2>iPhone 12 Pro</h2>
+                    <span class="price">$999.00</span>
+                </div>
+                <p>Golden</p>
+                <div class="name-product">
+                    <span class="count">x1</span>
+                    <span class="remove">X</span>
+                </div>
             </div>
-          <div class="price-product">
-          <span class="price">$399.00</span>
-          <span class="remove">X</span>
-        </div>
         </div>
         <div class="product-item">
-          <div class="img">
-          <img srcset="resources/iMac@2x.png" src="./resources/iMac.png"  alt="iMac">
-          </div>
-          <div class="name-product">
-            <h2>iMac</h2>
-          <p>Green</p>
-          <span class="count">x1</span>
+            <div class="img">
+                <img srcset="resources/Apple-watchx2.png" src="./resources/Apple-watch.png" alt="Apple-watch">
+            </div>
+            <div class="product-info">
+                <div class="name-product">
+                    <h2>Apple Watch</h2>
+                    <span class="price">$399.00</span>
+                </div>
+                <p>Blue</p>
+                <div class="name-product">
+                    <span class="count">x1</span>
+                    <span class="remove">X</span>
+                </div>
+            </div>
         </div>
-          <div class="price-product">
-          <span class="price">$1199.00</span>
-          <span class="remove">X</span>
-        </div>
+        <div class="product-item">
+            <div class="img">
+                <img srcset="resources/iMac@2x.png" src="./resources/iMac.png" alt="iMac">
+            </div>
+            <div class="product-info">
+                <div class="name-product">
+                    <h2>iMac</h2>
+                    <span class="price">$1199.00</span>
+                </div>
+                <p>Green</p>
+                <div class="name-product">
+                    <span class="count">x1</span>
+                    <span class="remove">X</span>
+                </div>
+
+            </div>
         </div>
         <div class="btn-d">
-          <input class="coupon" type="text" placeholder="Enter cupon code" />
-          <button class="btn-coupon">Apply Coupon</button>
+            <input class="coupon" type="text" placeholder="Enter cupon code"/>
+            <button class="btn-coupon">Apply Coupon</button>
         </div>
-        <div class="">
-          <table >
-            <tr>
-              <td> Sub total</td>
-              <td>$2597.00</td>
-            </tr>
-            <tr>
-              <td>Tax</td>
-              <td>$623.28</td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td>$3220.28</td>
-            </tr>
+        <div class="all-price">
+            <div class="item-price"><span>Sub total</span><span>$2597.00</span></div>
+            <div class="item-price"><span>Tax</span><span>$623.28</span></div>
+            <div class="item-price"><span>Total</span><span>$3220.28</span></div>
 
-          </table>
         </div>
 
-      </section>
-      <section class="contact">
+    </section>
+    <section class="contact">
         <h2>Contact Information</h2>
         <form action="#" method="post">
-          <label for="name">First & Last name</label>
-          <input id="name" name="name" type="text" placeholder="Enter first & last name">
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" placeholder="Enter email address">
-          <fieldset id="address">
-          <label for="country">Country</label>
-          <select  id="country" name="country">
-            <option value="usa">USA</option>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-          </select>
-          <label for="postcode">State</label>
+            <label for="name">First & Last name</label>
+            <input id="name" name="name" type="text" placeholder="Enter first & last name">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="Enter email address">
+            <fieldset id="address">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                </select>
+                <label for="postcode">State</label>
 
-          <input id="postcode" name="postcode" type="text" placeholder="00270">
-          </fieldset>
-<!--          <input type="submit" value="Надіслати">-->
-          <button type="submit">Continue</button>
+                <input id="postcode" name="postcode" type="text" placeholder="00270">
+            </fieldset>
+            <!--          <input type="submit" value="Надіслати">-->
+            <button type="submit">Continue</button>
         </form>
-      </section>
-    </main>
+    </section>
+</main>
 <!--  </div>-->
 
-    <footer>
-      <div class="attribution">
+<footer>
+    <div class="attribution">
         <p>
-          Coded by
-          <a
-                  href="https://github.com/Stif351/Shop-checkout.git"
-                  target="_blank"
-          >Stanislav Tsyhanok</a
-          >
+            Coded by
+            <a
+                    href="https://github.com/Stif351/Shop-checkout.git"
+                    target="_blank"
+            >Stanislav Tsyhanok</a
+            >
         </p>
         <p>
-          Challenge by
-          <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-          >DevChallenges</a
-          >
+            Challenge by
+            <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+            >DevChallenges</a
+            >
         </p>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>
